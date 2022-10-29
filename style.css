@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: 10%;
+    height: 40vh;
+    display:grid;
+    grid-gap: 0.3rem;
+    grid-template-columns: (1fr 1fr 80px);
+    grid-template-rows:100px 50px 50px;
+    grid-template-areas:
+    "h h h s"
+     "a a y y"
+     "a a z z"; 
+}
+.item1 {
+  grid-area: h;
+  background-color:orangered;
+}
+.item2 {
+  grid-area: s;
+  background-color: orange;
+}
+.item3{
+  grid-area: a;
+  background-color: green;
+}
+.item4 {
+  grid-area: y;
+  background-color: lightskyblue;
+}
+.item5{
+  grid-area: z;
+  background-color: lightskyblue;
+}
+
+
